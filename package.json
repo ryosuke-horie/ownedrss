@@ -11,7 +11,9 @@
     "typecheck": "tsc",
     "typegen": "wrangler types",
     "preview": "npm run build && wrangler pages dev",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "lint": "npx @biomejs/biome check app/*",
+    "lint:check": "npx @biomejs/biome check --apply app/*"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^2.8.1",
@@ -23,6 +25,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.7.3",
     "@cloudflare/workers-types": "^4.20240512.0",
     "@remix-run/dev": "^2.8.1",
     "@types/react": "^18.2.20",
