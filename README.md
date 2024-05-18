@@ -56,5 +56,5 @@ TODO：ここにライブラリ等をまとめていく。
   - workers & pages
 - dependabot
 - Biome ... Linter&Formatter
-- lefthook ... git hooks biomeの実行をgit hooksで実行するため
+- lefthook ... git hooks biomeの実行をgit hooksで実行するため [https://github.com/evilmartians/lefthook#install](lefthook)
 - Github Actions ... CI/CD
