@@ -44,3 +44,13 @@ pegesへデプロイする。
 ```sh
 npm run deploy
 ```
+
+## スタック
+
+TODO：ここにライブラリ等をまとめていく。
+
+- Remix
+- Cloudflare
+    - D1
+    - workers & pages
+- dependabot
