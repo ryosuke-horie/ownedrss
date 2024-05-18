@@ -35,6 +35,7 @@ npm run start
 > Cloudflareダッシュボードでデプロイメントバインディングを手動で構成する必要があります
 
 最初に実稼働用にビルドし
+
 ```sh
 npm run build
 ```
@@ -51,6 +52,9 @@ TODO：ここにライブラリ等をまとめていく。
 
 - Remix
 - Cloudflare
-    - D1
-    - workers & pages
+  - D1
+  - workers & pages
 - dependabot
+- Biome ... Linter&Formatter
+- lefthook ... git hooks biomeの実行をgit hooksで実行するため [https://github.com/evilmartians/lefthook#install](lefthook)
+- Github Actions ... CI/CD
