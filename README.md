@@ -1,16 +1,17 @@
-# Welcome to Remix + Vite!
+# OwnedRss
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/guides/vite) for details on supported features.
+## 概要
+
+自作のRSSリーダー。
+完全個人用に実装する。Remix＋Cloudflareの技術スタック習得と自分用にカスタマイズしたRSSリーダーが欲しいので実装する。
 
 ## Typegen
 
-Generate types for your Cloudflare bindings in `wrangler.toml`:
+`wrangler.toml`を修正する度に以下を実行する必要がある。:
 
 ```sh
 npm run typegen
 ```
-
-You will need to rerun typegen whenever you make changes to `wrangler.toml`.
 
 ## Development
 
@@ -30,19 +31,16 @@ npm run start
 ## Deployment
 
 > [!WARNING]  
-> Cloudflare does _not_ use `wrangler.toml` to configure deployment bindings.
-> You **MUST** [configure deployment bindings manually in the Cloudflare dashboard][bindings].
+> Cloudflare は `wrangler.toml` をデプロイメント バインディングを構成するために使用しません。
+> Cloudflareダッシュボードでデプロイメントバインディングを手動で構成する必要があります
 
-First, build your app for production:
-
+最初に実稼働用にビルドし
 ```sh
 npm run build
 ```
 
-Then, deploy your app to Cloudflare Pages:
+pegesへデプロイする。
 
 ```sh
 npm run deploy
 ```
-
-[bindings]: https://developers.cloudflare.com/pages/functions/bindings/
